@@ -4,9 +4,7 @@ export default function Differentials() {
     <div className="bg-green-600 py-12 px-6 md:px-12 text-white">
       <h2 className="text-center text-3xl font-bold mb-8">Nossos diferenciais</h2>
 
-      {/* Grid for Differentials */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {/* Individual Differential Cards */}
         <div className="bg-green-700 p-6 rounded-lg shadow-lg">
           <div className="flex items-center mb-4">
             <span className="text-white text-2xl mr-2">✔️</span>

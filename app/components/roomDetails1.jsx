@@ -25,7 +25,7 @@ export default function RoomDetails() {
         <div className="lg:w-1/2 w-full relative">
           <div className="relative w-full h-80 mb-4">
             <Image
-              src="/path/to/your/main-image.jpg" // Use the correct path for your image
+              src="/image1.jpg"
               alt="Standard Room"
               layout="fill"
               objectFit="cover"
@@ -34,7 +34,7 @@ export default function RoomDetails() {
           </div>
           <div className="flex space-x-4 overflow-x-scroll">
             <Image
-              src="/path/to/your/image1.jpg"
+              src="/image2.jpg"
               alt="Room Thumbnail 1"
               width={100}
               height={100}
@@ -42,7 +42,7 @@ export default function RoomDetails() {
               className="rounded-lg cursor-pointer"
             />
             <Image
-              src="/path/to/your/image2.jpg"
+              src="/image3.jpg"
               alt="Room Thumbnail 2"
               width={100}
               height={100}
@@ -50,7 +50,7 @@ export default function RoomDetails() {
               className="rounded-lg cursor-pointer"
             />
             <Image
-              src="/path/to/your/image3.jpg"
+              src="/image4.jpg"
               alt="Room Thumbnail 3"
               width={100}
               height={100}
@@ -58,7 +58,7 @@ export default function RoomDetails() {
               className="rounded-lg cursor-pointer"
             />
             <Image
-              src="/path/to/your/image4.jpg"
+              src="/image1.jpg"
               alt="Room Thumbnail 4"
               width={100}
               height={100}

@@ -24,7 +24,7 @@ export default function HeaderSection() {
         <div className="md:w-1/2 relative">
           <div className="relative w-full h-[450px] md:h-[500px]">
             <Image
-              src="/image.png"
+              src="/image1.jpg"
               alt="Hotel Sul América"
               layout="fill"
               objectFit="cover"

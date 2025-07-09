@@ -31,7 +31,7 @@ export default function LeisureArea() {
       <div className="md:w-1/2 mt-6 md:mt-0">
         <div className="relative w-full h-64 md:h-80">
           <Image
-            src="/image.png"
+            src="/image1.jpg"
             alt="Playground da Área de Lazer"
             layout="fill"
             objectFit="cover"
@@ -40,7 +40,7 @@ export default function LeisureArea() {
         </div>
 
         <div className="flex mt-4 space-x-2">
-          {["/image1.png", "/image2.png", "/image3.png", "/image4.png"].map(
+          {["/image1.jpg", "/image2.jpg", "/image3.jpg", "/image4.jpg"].map(
             (src, index) => (
               <div key={index} className="relative w-20 h-16">
                 <Image

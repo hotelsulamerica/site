@@ -1,24 +1,28 @@
-import HeaderSection from "./components/header/page";
-import LeisureArea from "./components/area/page";
-import RestaurantSection from "./components/restaurant/page";
-import RoomSection from "./components/rooms/page";
-import RoomDetails from "./components/roomDetails1/page";
-import RoomDetails2 from "./components/roomDetails2/page";
-import RoomDetails3 from "./components/roomDetails3/page";
-import RoomDetails4 from "./components/roomDetails4/page";
-import RoomDetails5 from "./components/roomDetails5/page";
-import Testimonials from "./components/testimonials/page";
-import Differentials from "./components/differentials/page";
-import AboutUs from "./components/aboutus/page";
-import MapEmbed from "./components/mapEmbed/page";
-import Footer from "./components/footer/page";
-
-import Counter from "./components/counter";
+import HeaderSection from "./components/header";
+import LeisureArea from "./components/area";
+import RestaurantSection from "./components/restaurant";
+import RoomSection from "./components/rooms";
+import RoomDetails from "./components/roomDetails1";
+import RoomDetails2 from "./components/roomDetails2";
+import RoomDetails3 from "./components/roomDetails3";
+import RoomDetails4 from "./components/roomDetails4";
+import RoomDetails5 from "./components/roomDetails5";
+import Testimonials from "./components/testimonials";
+import Differentials from "./components/differentials";
+import AboutUs from "./components/about-us";
+import MapEmbed from "./components/mapEmbed";
+import Footer from "./components/footer";
+import SimpleSlider from "./components/slider";
+import Navbar from "./components/navbar";
+import TopBar from "./components/topbar";
 
 export default function Home() {
   return (
     <>
-      {/* <HeaderSection />
+      <TopBar />
+      <Navbar />
+      <SimpleSlider />
+      <HeaderSection />
       <LeisureArea />
       <RestaurantSection />
       <RoomSection />
@@ -31,22 +35,7 @@ export default function Home() {
       <Differentials />
       <AboutUs />
       <MapEmbed />
-      <Footer /> */}
-
-      <div className="flex min-h-screen items-center justify-center bg-gradient-to-r from-black to-gray-900 text-white">
-        <div className="text-center space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold">
-            Nosso site está quase no ar!
-          </h1>
-          <p className="text-lg md:text-xl">Faltam apenas</p>
-
-          <Counter />
-
-          <p className="text-sm md:text-base">
-            Fique ligado! Estamos preparando algo incrível.
-          </p>
-        </div>
-      </div>
+      <Footer />
     </>
   );
 }

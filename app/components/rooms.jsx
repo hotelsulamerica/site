@@ -10,7 +10,7 @@ export default function RoomSection() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <Image
-            src="/path/to/your/image1.jpg"
+            src="/image1.jpg"
             alt="Standard Room"
             width={500}
             height={300}
@@ -24,7 +24,7 @@ export default function RoomSection() {
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <Image
-            src="/path/to/your/image2.jpg"
+            src="/image2.jpg"
             alt="Luxo Room"
             width={500}
             height={300}
@@ -38,7 +38,7 @@ export default function RoomSection() {
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <Image
-            src="/path/to/your/image3.jpg"
+            src="/image3.jpg"
             alt="Super Luxo Room"
             width={500}
             height={300}
@@ -52,7 +52,7 @@ export default function RoomSection() {
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <Image
-            src="/path/to/your/image4.jpg"
+            src="/image4.jpg"
             alt="Master Room"
             width={500}
             height={300}
@@ -66,7 +66,7 @@ export default function RoomSection() {
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <Image
-            src="/path/to/your/image5.jpg"
+            src="/image1.jpg"
             alt="Nova Master Room"
             width={500}
             height={300}
@@ -80,7 +80,7 @@ export default function RoomSection() {
 
         <div className="bg-white shadow-lg rounded-lg overflow-hidden">
           <Image
-            src="/path/to/your/image6.jpg"
+            src="/image2.jpg"
             alt="Restaurant"
             width={500}
             height={300}

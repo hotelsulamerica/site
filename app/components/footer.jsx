@@ -1,4 +1,3 @@
-// components/Footer.js
 export default function Footer() {
   return (
     <div className="bg-green-600 text-white py-12 px-6 md:px-12">
@@ -20,7 +19,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Contact Form */}
         <form className="space-y-4 max-w-lg mx-auto">
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <input
@@ -53,21 +51,20 @@ export default function Footer() {
         </form>
       </div>
 
-      {/* Footer Links */}
       <div className="bg-green-700 py-4 text-center">
         <div className="flex justify-center space-x-6">
           <a href="#" className="text-white hover:text-gray-300">
-            <span className="text-2xl">📘</span> {/* Example for Facebook */}
+            <span className="text-2xl">📘</span>
           </a>
           <a href="#" className="text-white hover:text-gray-300">
-            <span className="text-2xl">📸</span> {/* Example for Instagram */}
+            <span className="text-2xl">📸</span>
           </a>
           <a href="https://wa.me/5535988680724" className="text-white hover:text-gray-300">
-            <span className="text-2xl">📲</span> {/* WhatsApp link */}
+            <span className="text-2xl">📲</span>
           </a>
         </div>
         <p className="mt-4 text-sm">
-          Hotel Sul América todos os Direitos Reservados © 2023
+          Hotel Sul América todos os Direitos Reservados © 2025
         </p>
       </div>
     </div>

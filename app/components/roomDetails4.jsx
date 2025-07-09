@@ -1,22 +1,23 @@
 import Image from "next/image";
 
-export default function RoomDetails2() {
+export default function RoomDetails4() {
   return (
     <div className="bg-white py-12 px-6 md:px-12">
       <div className="flex flex-col lg:flex-row items-center">
-        {/* Room Description */}
         <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-          <h2 className="text-3xl font-bold text-green-600 mb-4">Luxo</h2>
+          <h2 className="text-3xl font-bold text-green-600 mb-4">Master</h2>
           <h3 className="text-lg mb-6">Características:</h3>
           <ul className="list-disc pl-6 space-y-2">
+            <li>Cama King com Criado Mudo;</li>
+            <li>Armário Embutido;</li>
+            <li>Amplo Banheiro com Box Blindex;</li>
+            <li>Cômoda;</li>
+            <li>Decoração Requintada;</li>
             <li>Frigobar;</li>
             <li>Telefone;</li>
-            <li>Banheiro com Box;</li>
             <li>Ar Condicionado;</li>
-            <li>Aparador com Gavetas e Espelhos;</li>
-            <li>Cama com Criado-Mudo;</li>
-            <li>Armário Embutido;</li>
-            <li>TV de LED 32” com Controle Remoto;</li>
+            <li>TV de LED 42";</li>
+            <li>DVD;</li>
             <li>10 Canais por assinatura.</li>
           </ul>
           <button className="mt-6 px-6 py-2 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600">
@@ -24,11 +25,10 @@ export default function RoomDetails2() {
           </button>
         </div>
 
-        {/* Image Gallery */}
         <div className="lg:w-1/2 w-full relative">
           <div className="relative w-full h-80 mb-4">
             <Image
-              src="/path/to/your/main-image.jpg" // Use the correct path for your image
+              src="/image1.jpg"
               alt="Luxo Room"
               layout="fill"
               objectFit="cover"
@@ -37,7 +37,7 @@ export default function RoomDetails2() {
           </div>
           <div className="flex space-x-4 overflow-x-scroll">
             <Image
-              src="/path/to/your/image1.jpg"
+              src="/image2.jpg"
               alt="Room Thumbnail 1"
               width={100}
               height={100}
@@ -45,7 +45,7 @@ export default function RoomDetails2() {
               className="rounded-lg cursor-pointer"
             />
             <Image
-              src="/path/to/your/image2.jpg"
+              src="/image3.jpg"
               alt="Room Thumbnail 2"
               width={100}
               height={100}
@@ -53,7 +53,7 @@ export default function RoomDetails2() {
               className="rounded-lg cursor-pointer"
             />
             <Image
-              src="/path/to/your/image3.jpg"
+              src="/image4.jpg"
               alt="Room Thumbnail 3"
               width={100}
               height={100}
@@ -61,7 +61,7 @@ export default function RoomDetails2() {
               className="rounded-lg cursor-pointer"
             />
             <Image
-              src="/path/to/your/image4.jpg"
+              src="/image1.jpg"
               alt="Room Thumbnail 4"
               width={100}
               height={100}

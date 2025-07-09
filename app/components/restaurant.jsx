@@ -8,7 +8,7 @@ export default function RestaurantSection() {
         <div className="md:w-1/2">
           <div className="relative w-full h-72 md:h-96">
             <Image
-              src="/image.png"
+              src="/image1.jpg"
               alt="Buffet do restaurante"
               layout="fill"
               objectFit="cover"
@@ -17,7 +17,7 @@ export default function RestaurantSection() {
           </div>
 
           <div className="flex mt-4 space-x-2">
-            {["/image1.png", "/image2.png", "/image3.png", "/image4.png", "/image5.png"].map(
+            {["/image1.jpg", "/image2.jpg", "/image3.jpg", "/image4.jpg", "/image1.jpg"].map(
               (src, index) => (
                 <div key={index} className="relative w-24 h-16">
                   <Image

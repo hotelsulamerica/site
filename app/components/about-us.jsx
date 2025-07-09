@@ -4,7 +4,6 @@ export default function AboutUs() {
   return (
     <div className="bg-white py-12 px-6 md:px-12">
       <div className="flex flex-col lg:flex-row items-center justify-between">
-        {/* Text Section */}
         <div className="lg:w-1/2 w-full mb-8 lg:mb-0">
           <h2 className="text-3xl font-bold text-green-600 mb-4">Quem somos</h2>
           <p className="text-lg text-gray-700 mb-6">
@@ -21,11 +20,10 @@ export default function AboutUs() {
           </button>
         </div>
 
-        {/* Image Section */}
         <div className="lg:w-1/2 w-full flex justify-between">
           <div className="relative w-1/2 h-96 mb-4 lg:mb-0">
             <Image
-              src="/path/to/your/image1.jpg" // Use the correct path for your image
+              src="/image1.jpg"
               alt="Image 1"
               layout="fill"
               objectFit="cover"
@@ -34,7 +32,7 @@ export default function AboutUs() {
           </div>
           <div className="relative w-1/2 h-96">
             <Image
-              src="/path/to/your/image2.jpg" // Use the correct path for your image
+              src="/image2.jpg"
               alt="Image 2"
               layout="fill"
               objectFit="cover"
