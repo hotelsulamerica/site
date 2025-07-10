@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <div className="bg-white py-12 px-6 md:px-12">
+    <div className="bg-white py-12 px-6 md:px-12" id="about">
       <div className="flex flex-col lg:flex-row items-center justify-between">
         <div className="lg:w-1/2 w-full mb-8 lg:mb-0">
           <h2 className="text-3xl font-bold text-green-600 mb-4">Quem somos</h2>

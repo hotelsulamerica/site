@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function RoomSection() {
   return (
-    <div className="bg-white py-12 px-6 md:px-12">
+    <div className="bg-white py-12 px-6 md:px-12" id="rooms">
       <h1 className="text-center text-3xl font-bold text-green-600 mb-10">
         Conheça os Quartos e Restaurante do Hotel
       </h1>

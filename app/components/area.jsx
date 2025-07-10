@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LeisureArea() {
   return (
-    <section className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between">
+    <section className="container mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between" id="leisure">
       <div className="md:w-1/2">
         <h2 className="text-green-700 text-4xl font-bold">Área de Lazer</h2>
         <h3 className="text-xl font-semibold mt-4">Características:</h3>

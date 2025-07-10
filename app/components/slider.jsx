@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const images = ["/slider03.jpg", "/slider01.jpg", "/slider02.jpg"];
+const images = ["/slider03.jpg", "/slider01.jpg", "/slider02.jpg", "/slider04.jpg", "/slider05.jpg"];
 
 export default function AutoSlider() {
   const [current, setCurrent] = useState(0);

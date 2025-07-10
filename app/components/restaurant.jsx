@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function RestaurantSection() {
   return (
-    <section className="bg-green-700 py-12 px-6 md:px-12">
+    <section className="bg-green-700 py-12 px-6 md:px-12" id="restaurant">
       <div className="container mx-auto flex flex-col md:flex-row items-center gap-8">
 
         <div className="md:w-1/2">
