@@ -9,12 +9,12 @@ export default function AutoSlider() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev === images.length - 1 ? 0 : prev + 1));
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="relative w-full h-[400px] overflow-hidden">
+    <div className="relative w-full h-[500px] overflow-hidden">
       <div
         className="flex transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
@@ -24,7 +24,7 @@ export default function AutoSlider() {
             key={index}
             src={img}
             alt={`Slide ${index + 1}`}
-            className="w-full flex-shrink-0 object-cover h-[400px]"
+            className="w-full flex-shrink-0 object-cover h-[500px]"
           />
         ))}
       </div>
