@@ -33,14 +33,18 @@ export default function Booking() {
   };
 
   return (
-    <div className="relative z-10">
-      <div className="-mt-6 bg-white rounded-lg shadow-lg px-6 py-6 w-full max-w-screen-xl mx-auto">
+    <div className="relative z-10 md:py-10 bg-[#008C44]">
+      
+      <div className="bg-white rounded-lg shadow-2xl px-4 py-12 w-full max-w-screen-xl mx-auto">
+        <div className="text-center pb-8 md:text-2xl text-xl font-bold text-[#008C44]">
+        Solicite uma cotação conosco!
+      </div>
         <form
           onSubmit={handleSubmit}
-          className="w-full flex flex-wrap md:flex-nowrap justify-center items-end gap-4 text-sm"
+          className="w-full px-2 sm:px-0 flex flex-wrap md:flex-nowrap justify-center items-end gap-4 text-sm"
         >
           <InputField
-            label="WhatsApp*"
+            label="WhatsApp"
             tooltip="Digite o número com DDD. Ex: (31) 91234-5678"
             type="text"
             name="whatsapp"
@@ -51,7 +55,7 @@ export default function Booking() {
           />
 
           <SelectField
-            label="Quarto*"
+            label="Quarto"
             tooltip="Escolha o tipo de acomodação desejada."
             name="quarto"
             value={form.quarto}
@@ -67,7 +71,7 @@ export default function Booking() {
           />
 
           <InputField
-            label="Chegada*"
+            label="Chegada"
             tooltip="Data prevista de entrada no hotel."
             type="date"
             name="chegada"
@@ -77,7 +81,7 @@ export default function Booking() {
           />
 
           <InputField
-            label="Saída*"
+            label="Saída"
             tooltip="Data prevista de saída do hotel."
             type="date"
             name="saida"
@@ -87,7 +91,7 @@ export default function Booking() {
           />
 
           <SelectField
-            label="Adultos*"
+            label="Adultos"
             tooltip="Número de adultos na reserva."
             name="adultos"
             value={form.adultos}
@@ -97,7 +101,7 @@ export default function Booking() {
           />
 
           <SelectField
-            label="Crianças*"
+            label="Crianças"
             tooltip="Número de crianças menores de 12 anos."
             name="criancas"
             value={form.criancas}
@@ -109,7 +113,7 @@ export default function Booking() {
           <div className="flex flex-col w-auto">
             <button
               type="submit"
-              className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold text-sm px-5 py-2.5 rounded shadow-md transition whitespace-nowrap"
+              className="bg-[#008C44] hover:bg-[#FFDF82] text-white hover:text-[#0D0D0D] font-semibold text-sm px-5 py-2.5 rounded shadow-md transition whitespace-nowrap"
             >
               SOLICITAR COTAÇÃO
             </button>

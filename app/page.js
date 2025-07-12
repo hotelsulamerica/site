@@ -25,7 +25,7 @@ export default function Home() {
       <SimpleSlider />
       <Booking />
       <HeaderSection />
-      <LeisureArea />
+      {/* <LeisureArea />
       <RestaurantSection />
       <RoomSection />
       <RoomDetails />
@@ -37,7 +37,7 @@ export default function Home() {
       <Differentials />
       <AboutUs />
       <MapEmbed />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
