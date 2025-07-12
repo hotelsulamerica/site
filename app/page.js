@@ -15,6 +15,7 @@ import Footer from "./components/footer";
 import SimpleSlider from "./components/slider";
 import Navbar from "./components/navbar";
 import TopBar from "./components/topbar";
+import Booking from "./components/booking";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <TopBar />
       <Navbar />
       <SimpleSlider />
+      <Booking />
       <HeaderSection />
       <LeisureArea />
       <RestaurantSection />
