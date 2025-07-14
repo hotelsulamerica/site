@@ -46,7 +46,7 @@ export default function HeaderSection() {
       <div className="flex flex-col md:flex-row mt-12 gap-8">
         <div className="flex-1 flex items-center justify-center" ref={imageRef}>
           <div
-            className={`relative w-full h-[300px] md:h-[400px] transition-opacity duration-300 ${
+            className={`relative w-full aspect-[4/3] transition-opacity duration-300 ${
               isFading ? "opacity-0" : "opacity-100"
             }`}
           >
@@ -75,7 +75,7 @@ export default function HeaderSection() {
               <p className={`font-bold text-lg ${activeItem === "culinaria" ? "text-black" : "text-[#FFDF82]"}`}>
                 Culinária
               </p>
-              <p className="text-sm font-semibold">
+              <p className="text-sm">
                 O Hotel Sul América oferece uma gastronomia mineira excepcional,
                 com uma variedade de pratos preparados com ingredientes frescos.
               </p>
@@ -95,7 +95,7 @@ export default function HeaderSection() {
               <p className={`font-bold text-lg ${activeItem === "piscina" ? "text-black" : "text-[#FFDF82]"}`}>
                 Piscinas
               </p>
-              <p className="text-sm font-semibold">
+              <p className="text-sm">
                 Contamos com 3 piscinas, sendo uma térmica, onde você pode
                 relaxar e se divertir em todas as estações.
               </p>
@@ -115,7 +115,7 @@ export default function HeaderSection() {
               <p className={`font-bold text-lg ${activeItem === "cinema" ? "text-black" : "text-[#FFDF82]"}`}>
                 Cinema e TV
               </p>
-              <p className="text-sm font-semibold">
+              <p className="text-sm">
                 Em nossas instalações, você pode assistir filmes e se divertir
                 em nosso cinema ou em uma de nossas TVs enormes!
               </p>
@@ -135,7 +135,7 @@ export default function HeaderSection() {
               <p className={`font-bold text-lg ${activeItem === "festas" ? "text-black" : "text-[#FFDF82]"}`}>
                 Festas
               </p>
-              <p className="text-sm font-semibold">
+              <p className="text-sm">
                 Toda quinta, sexta e sábado temos festas para nossos hóspedes,
                 com petiscos, bebidas e música ao vivo!
               </p>
