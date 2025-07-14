@@ -5,10 +5,12 @@ import Image from "next/image";
 export default function HeaderSection() {
   const [imageSrc, setImageSrc] = useState("/culinaria.jpg");
   const [isFading, setIsFading] = useState(false);
+  const [activeItem, setActiveItem] = useState("culinaria");
   const imageRef = useRef(null);
 
-  const handleImageChange = (src) => {
+  const handleImageChange = (src, key) => {
     setIsFading(true);
+    setActiveItem(key);
 
     setTimeout(() => {
       setImageSrc(src);
@@ -44,49 +46,96 @@ export default function HeaderSection() {
       <div className="flex flex-col md:flex-row mt-12 gap-8">
         <div className="flex-1 flex items-center justify-center" ref={imageRef}>
           <div
-            className={`transition-opacity duration-300 ${
+            className={`relative w-full h-[300px] md:h-[400px] transition-opacity duration-300 ${
               isFading ? "opacity-0" : "opacity-100"
             }`}
           >
             <Image
               src={imageSrc}
               alt="Hotel"
-              width={500}
-              height={500}
-              className="rounded-xl shadow-xl"
+              fill
+              className="rounded-xl shadow-xl object-cover"
             />
           </div>
         </div>
 
         <div className="flex-1">
-          <ul className="space-y-6 cursor-pointer">
-            <li onClick={() => handleImageChange("/culinaria.jpg")}>
-              <p className="font-semibold text-lg text-[#FFDF82]">Culinária</p>
-              <p>
+          <ul className="cursor-pointer space-y-4">
+            <li
+              onClick={() => handleImageChange("/culinaria.jpg", "culinaria")}
+              className={`relative p-3 rounded-xl transition-colors ${
+                activeItem === "culinaria"
+                  ? "bg-white text-[#008C44]"
+                  : "bg-transparent"
+              }`}
+            >
+              {activeItem === "culinaria" && (
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-full w-0 h-0 border-y-[10px] border-y-transparent border-r-[10px] border-r-white mr-2"></div>
+              )}
+              <p className={`font-bold text-lg ${activeItem === "culinaria" ? "text-black" : "text-[#FFDF82]"}`}>
+                Culinária
+              </p>
+              <p className="text-sm font-semibold">
                 O Hotel Sul América oferece uma gastronomia mineira excepcional,
                 com uma variedade de pratos preparados com ingredientes frescos.
               </p>
             </li>
 
-            <li onClick={() => handleImageChange("/piscina.jpg")}>
-              <p className="font-semibold text-lg text-[#FFDF82]">Piscinas</p>
-              <p>
+            <li
+              onClick={() => handleImageChange("/piscina.jpg", "piscina")}
+              className={`relative p-3 rounded-xl transition-colors ${
+                activeItem === "piscina"
+                  ? "bg-white text-[#008C44]"
+                  : "bg-transparent"
+              }`}
+            >
+              {activeItem === "piscina" && (
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-full w-0 h-0 border-y-[10px] border-y-transparent border-r-[10px] border-r-white mr-2"></div>
+              )}
+              <p className={`font-bold text-lg ${activeItem === "piscina" ? "text-black" : "text-[#FFDF82]"}`}>
+                Piscinas
+              </p>
+              <p className="text-sm font-semibold">
                 Contamos com 3 piscinas, sendo uma térmica, onde você pode
                 relaxar e se divertir em todas as estações.
               </p>
             </li>
 
-            <li onClick={() => handleImageChange("/cinema.jpg")}>
-              <p className="font-semibold text-lg text-[#FFDF82]">Cinema e TV</p>
-              <p>
+            <li
+              onClick={() => handleImageChange("/cinema.jpg", "cinema")}
+              className={`relative p-3 rounded-xl transition-colors ${
+                activeItem === "cinema"
+                  ? "bg-white text-[#008C44]"
+                  : "bg-transparent"
+              }`}
+            >
+              {activeItem === "cinema" && (
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-full w-0 h-0 border-y-[10px] border-y-transparent border-r-[10px] border-r-white mr-2"></div>
+              )}
+              <p className={`font-bold text-lg ${activeItem === "cinema" ? "text-black" : "text-[#FFDF82]"}`}>
+                Cinema e TV
+              </p>
+              <p className="text-sm font-semibold">
                 Em nossas instalações, você pode assistir filmes e se divertir
                 em nosso cinema ou em uma de nossas TVs enormes!
               </p>
             </li>
 
-            <li onClick={() => handleImageChange("/shows.jpg")}>
-              <p className="font-semibold text-lg text-[#FFDF82]">Festas</p>
-              <p>
+            <li
+              onClick={() => handleImageChange("/shows.jpg", "festas")}
+              className={`relative p-3 rounded-xl transition-colors ${
+                activeItem === "festas"
+                  ? "bg-white text-[#008C44]"
+                  : "bg-transparent"
+              }`}
+            >
+              {activeItem === "festas" && (
+                <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-full w-0 h-0 border-y-[10px] border-y-transparent border-r-[10px] border-r-white mr-2"></div>
+              )}
+              <p className={`font-bold text-lg ${activeItem === "festas" ? "text-black" : "text-[#FFDF82]"}`}>
+                Festas
+              </p>
+              <p className="text-sm font-semibold">
                 Toda quinta, sexta e sábado temos festas para nossos hóspedes,
                 com petiscos, bebidas e música ao vivo!
               </p>
