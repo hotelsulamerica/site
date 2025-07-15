@@ -25,8 +25,8 @@ export default function Home() {
       <SimpleSlider />
       <Booking />
       <HeaderSection />
-      {/* <LeisureArea />
-      <RestaurantSection />
+      <LeisureArea />
+      {/*<RestaurantSection />
       <RoomSection />
       <RoomDetails />
       <RoomDetails2 />
