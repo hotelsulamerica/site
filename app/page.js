@@ -26,8 +26,8 @@ export default function Home() {
       <Booking />
       <HeaderSection />
       <LeisureArea />
-      {/*<RestaurantSection />
-      <RoomSection />
+      <RestaurantSection />
+      {/* <RoomSection />
       <RoomDetails />
       <RoomDetails2 />
       <RoomDetails3 />
