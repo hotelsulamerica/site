@@ -7,16 +7,16 @@ import Link from "next/link";
 
 export default function RestaurantSection() {
   const images = [
-    "/image1.jpg",
-    "/image2.jpg",
-    "/image3.jpg",
-    "/image4.jpg",
-    "/image5.jpg",
-    "/image6.jpg",
-    "/image7.jpg",
-    "/image8.jpg",
-    "/image9.jpg",
-    "/image10.jpg",
+    "/cebola.jpg",
+    "/churros.jpg",
+    "/frango.jpg",
+    "/linguica.jpg",
+    "/pernil.jpg",
+    "/presunto.jpg",
+    "/queijo.jpg",
+    "/salada.jpg",
+    "/torresmo.jpg",
+    "/vinagrete.jpg",
   ];
 
   const [mainSlider, setMainSlider] = useState(null);
